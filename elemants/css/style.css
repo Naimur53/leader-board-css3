@@ -2,7 +2,11 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 30px;
+    place-items:center;
 }
+.blogs{ 
+    grid-template-columns: repeat(2,1fr);
+} 
 .player , .blog{
     display: flex;
     align-items: center;
@@ -26,11 +30,12 @@
     .blogs{
         grid-template-columns: repeat(1,1fr); 
     }
+    .blog{
+        display: block;
+    }
 }
 
-.blogs{ 
-    grid-template-columns: repeat(2,1fr);
-}  
+ 
 .thubnail {
     width: 200px;
     height: auto;
