@@ -1,4 +1,4 @@
-.top-players , .blogs{
+.top-players , .blogs , .courses{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 30px;
@@ -6,7 +6,7 @@
 }
 .blogs{ 
     grid-template-columns: repeat(2,1fr);
-} 
+}  
 .player , .blog{
     display: flex;
     align-items: center;
@@ -16,7 +16,7 @@
     margin-right: 30px;
 }
 @media (max-width:992px){ 
-    .top-players{
+    .top-players , .courses{
         grid-template-columns: repeat(2,1fr); 
 }
     .blogs{
@@ -24,7 +24,7 @@
     }
 }
 @media (max-width:668px){ 
-    .top-players{
+    .top-players , .courses{
         grid-template-columns: repeat(1,1fr);  
 }
     .blogs{
@@ -33,10 +33,24 @@
     .blog{
         display: block;
     }
+} 
+.course-details img {
+    
 }
-
- 
 .thubnail {
     width: 200px;
     height: auto;
+}
+.filled{
+    color:goldenrod;
+    font-size: .8em;
+}
+.unfilled{
+    color:gray;
+    font-size: .8em;
+}
+.hour{
+    background:pink;
+    color:palevioletred;
+    border-radius: 30px;
 }
